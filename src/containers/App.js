@@ -11,7 +11,6 @@ function App({ onTodoCreatorSubmit, onBtnClick }) {
       <FiltersContainer />
       <TodosContainer />
       <TodoCreator onSubmit={onTodoCreatorSubmit} />
-      <button onClick={onBtnClick}>Click</button>
     </div>
   );
 }
@@ -20,11 +19,6 @@ function mapDispatchToProps(dispatch) {
   return {
     onTodoCreatorSubmit(title) {
       dispatch(createTodo(title));
-    },
-    onBtnClick() {
-      dispatch({
-        type: 'EMPTY_ACTION',
-      });
     },
   };
 }
