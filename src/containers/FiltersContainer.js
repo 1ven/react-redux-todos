@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import { setVisibilityFilter } from '../actions';
 import Filters from '../components/Filters';
 
-// Write github issue
 function mapStateToProps(state) {
   const { visibilityFilter } = state.todos;
 
