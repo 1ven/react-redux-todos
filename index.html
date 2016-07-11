@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sample App</title>
+    <style>
+      body, a, input {
+        font-family: 'Monaco';
+      }
+      a {
+        cursor: pointer;
+      }
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+      .b-app {
+        width: 500px;
+        margin: 0 auto;
+      }
+      .b-todo {
+        padding: 10px 0;
+        border-bottom: 1px solid #fff;
+      }
+      .b-todo:last-child {
+        border-bottom: 0;
+      }
+      .b-input-creator {
+        position: relative;
+      }
+      .b-input-creator__title {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        padding: 10px 0;
+        font-size: 14px;
+        border-top: 1px dashed #fff;
+        border-bottom: 1px dashed #fff;
+        outline: none;
+        color: #fff;
+      }
+      .b-input-creator__submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: transparent;
+        color: #fff;
+        border: 0;
+        font-size: 14px;
+        outline: none;
+      }
+      .b-input-creator__submit:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .b-visibility-filter {
+        margin: 0 -6px;
+      }
+      .b-visibility-filter__link {
+        margin: 0 6px;
+      }
+      .b-visibility-filter__link_active {
+        text-decoration: underline;
+      }
+      .b-error {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='root'>
+    </div>
+    <script src="/static/bundle.js"></script>
+  </body>
+</html>
